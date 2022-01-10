@@ -21,14 +21,35 @@ const symbols = "!@#$%^&*_-+=";
 
 
 //Prompt to choose the length of the password that is at least 8 characters and no more than 124 characters
-function tex() {
-  let answer = prompt("How many characters long would you like your password to be?");
+function test() {
+  let lengthAnswer = prompt("How many characters long would you like your password to be?");
+  console.log(lengthAnswer);
 }
 
-//Prompt to choose confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
+//Prompt to choose confirm whether or not to include lowercases
+function test() {
+  let lowercaseAnswer = prompt("Would you like your password to include lowercase letters?");
+  console.log(lowercaseAnswer);
+}
+
+//Prompt to choose confirm whether or not to include uppercase
+function test() {
+  let uppercaseAnswer = prompt("Would you like your password to include uppercase letters?");
+  console.log(uppercaseAnswer);
+}
+
+//Prompt to choose confirm whether or not to include numbers
+function test() {
+  let alphaAnswer = prompt("Would you like your password to include numbers?");
+
+//Prompt to choose confirm whether or not to include special characters
+function test() {
+  let alphaAnswer = prompt("Would you like your password to include special characters?");
+
 
 // When a user answsers a prompt - each input type should be validated and at least one character type should be selected
 
 //When prompts are answered, generate a password that matches the criteria
 
 //Generated password displayed in an alert of written to the page
+
