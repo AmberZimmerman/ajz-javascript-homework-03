@@ -24,26 +24,26 @@ let lengthAnswer = Number(prompt("How many characters long would you like your p
   console.log(`length of password ${lengthAnswer}`);
 
 //Prompt to choose confirm whether or not to include lowercases
-if (confirm("Would you like your password to include lowercase letters?")) {
+if (confirm("Would you like your password to include lowercase letters? Click ok to continue with lowercase letters or cancel to continue without lowercase letters")) {
   charSet += lowerCase;
   console.log(charSet);
 }
 
 //Prompt to choose confirm whether or not to include uppercase
-if (confirm("Would you like your password to include uppercase letters?")) {
+if (confirm("Would you like your password to include uppercase letters? Click ok to continue with uppercase letters or cancel to continue without uppercase letters")) {
   charSet += upperCase;
   console.log(charSet);
 }
 
 //Prompt to choose confirm whether or not to include numbers
-if (confirm("Would you like your password to include numbers?")) {
+if (confirm("Would you like your password to include numbers? Click ok to continue with numbers or cancel to continue without numbers")) {
   charSet += numbers;
   console.log(charSet);
 }
 
 
 //Prompt to choose confirm whether or not to include special characters
-if (confirm("Would you like your password to include special characters?")) {
+if (confirm("Would you like your password to include special characters? Click ok to add special characters and generate password or cancel to generate password without special characters")) {
   charSet += symbols;
   console.log(charSet);
 }
