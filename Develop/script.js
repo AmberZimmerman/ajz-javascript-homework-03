@@ -22,6 +22,30 @@ let charSet = "";
 //Prompt to choose the length of the password that is at least 8 characters and no more than 124 characters
 let lengthAnswer = Number(prompt("How many characters long would you like your password to be? Type a number between 8 and 124", "8"));
   console.log(`length of password ${lengthAnswer}`);
+//  if(lengthAnswer < 8 || lengthAnswer > 128 || isNaN(length)) {
+//     lengthAnswer.remove("invalid");
+//     lengthAnswer.add("valid");
+//   } else {
+//     lengthAnswer.remove("valid");
+//     lengthAnswer.add("invalid");
+
+function checkLength() 
+{ 
+var finalPassword = (lengthAnswer < 8 || lengthAnswer > 128 || isNaN(length));
+if(charSet.match(finalPassword)) 
+{ 
+alert('Correct, try another...')
+return true;
+}
+else
+{ 
+alert('Incorrect entry. Please choose a number between 8 to 128 and click ok to continue')
+return false;
+}
+}
+
+// checkLength ()
+
 
 //Prompt to choose confirm whether or not to include lowercases
 if (confirm("Would you like your password to include lowercase letters? Click ok to continue with lowercase letters or cancel to continue without lowercase letters")) {
@@ -47,6 +71,8 @@ if (confirm("Would you like your password to include special characters? Click o
   charSet += symbols;
   console.log(charSet);
 }
+
+
 
 let finalPassword = "";
 
