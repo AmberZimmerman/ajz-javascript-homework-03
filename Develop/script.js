@@ -21,32 +21,31 @@ let lengthAnswer = prompt("How many characters long would you like your password
 
 //Prompt to choose confirm whether or not to include lowercases
 if (confirm("Would you like your password to include lowercase letters?")) {
-  console.log(`Include lowercase letters ${lowercaseAnswer}`);
+  charSet += lowerCase;
+  console.log(charSet);
 }
-
-
 
 //Prompt to choose confirm whether or not to include uppercase
-function uppercaseAnswer() {
-  let uppercaseAnswer = confirm("Would you like your password to include uppercase letters?");
-  console.log(`Include uppercase letters ${uppercaseAnswer}`);
+if (confirm("Would you like your password to include uppercase letters?")) {
+  charSet += upperCase;
+  console.log(charSet);
 }
-uppercaseAnswer()
-
 
 //Prompt to choose confirm whether or not to include numbers
-function numberQuestion() {
-  let numberAnswer = confirm("Would you like your password to include numbers?");
-  console.log(`include numbers ${numberAnswer}`);
+if (confirm("Would you like your password to include numbers?")) {
+  charSet += numbers;
+  console.log(charSet);
 }
-numberQuestion()
+
 
 //Prompt to choose confirm whether or not to include special characters
-function characterQuestion() {
-  let characterAnswer = confirm("Would you like your password to include special characters?");
-  console.log(`Include special characters ${characterAnswer}`);
+ if (confirm("Would you like your password to include special characters?")) {
+  charSet += symbols;
+  console.log(charSet);
 }
-characterQuestion()
+
+let finalPassword = "";
+ for (index = 0, index < Math.floor(Math.random() * )
   
   
 
@@ -54,6 +53,8 @@ characterQuestion()
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
+
+  return finalPassword;
 
 }
 }
