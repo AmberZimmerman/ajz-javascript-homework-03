@@ -20,12 +20,41 @@ const symbols = "!@#$%^&*_-+=";
 let charSet = "";
 
 //Prompt to choose the length of the password that is at least 8 characters and no more than 124 characters
-let lengthAnswer = Number(prompt("How many characters long would you like your password to be? Type a number between 8 and 124", "8"));
 
-while (!lengthAnswer); {
-  console.log(`Please enter a number between 8 and 124`);
+
+// let lengthAnswer = Number(prompt("How many characters long would you like your password to be? Type a number between 8 and 124", "8"));
+
+// const lengthAnswer = range(8,124);
+
+// let lengthAnswer = Number(prompt("How many characters long would you like your password to be? Type a number between 8 and 124", "8"));
+// console.log(lengthAnswer);
+
+function test() {
+  let lengthAnswer = Number(prompt("How many characters long would you like your password to be? Type a number between 8 and 124", "8")); {
+    if (lengthAnswer >= 8 && lengthAnswer <=124) {
+    console.log(lengthAnswer);
+    return;
+    } else {
+      
+    }
+    
+  }
+  
 }
-  console.log(`length of password ${lengthAnswer}`);
+
+test();
+
+// if (lengthAnswer >= 8 && lengthAnswer <= 124) {
+//   console.log(lengthAnswer);
+// } else {
+
+// }
+
+// while (!lengthAnswer); {
+//   console.log(`Please enter a number between 8 and 124`);
+      // the function for the answer would go above
+// }
+//   console.log(`length of password ${lengthAnswer}`);
 
 
 
@@ -83,7 +112,7 @@ if (confirm("Would you like your password to include special characters? Click o
 let finalPassword = "";
 
 //When prompts are answered, generate a password that matches the criteria
-for (i = 0; i < lengthAnswer; i++) {
+for (i = test.lengthAnswer; i++) {
   finalPassword += charSet.charAt(Math.floor(Math.random() * charSet.length));
 }
 
