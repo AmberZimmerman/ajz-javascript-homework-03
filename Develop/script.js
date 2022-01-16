@@ -32,39 +32,55 @@ function verifyNumber() {
       alert("Type a number between 8 and 128");
       verifyNumber();
     }
+    
 }
 
 verifyNumber();
 
 
-//Prompt to choose confirm whether or not to include lowercases
+
+
+//Confirm window to choose confirm whether or not to include lowercases
+function generateLowerCase() {
 if (confirm("Would you like your password to include lowercase letters? Click ok to continue with lowercase letters or cancel to continue without lowercase letters")) {
   charSet += lowerCase;
   console.log(charSet);
-}
+}};
 
-//Prompt to choose confirm whether or not to include uppercase
+generateLowerCase();
+
+//Confirm window to choose confirm whether or not to include uppercase
+function generateUpperCase() {
 if (confirm("Would you like your password to include uppercase letters? Click ok to continue with uppercase letters or cancel to continue without uppercase letters")) {
   charSet += upperCase;
   console.log(charSet);
-}
+}};
 
-//Prompt to choose confirm whether or not to include numbers
+generateUpperCase();
+
+//Confirm window to choose confirm whether or not to include numbers
+function generateNumbers() {
 if (confirm("Would you like your password to include numbers? Click ok to continue with numbers or cancel to continue without numbers")) {
   charSet += numbers;
   console.log(charSet);
-}
+}};
+
+generateNumbers();
 
 
-//Prompt to choose confirm whether or not to include special characters
+//Confirm window to choose confirm whether or not to include special characters
+function generateSymbols() {
 if (confirm("Would you like your password to include special characters? Click ok to add special characters and generate password or cancel to generate password without special characters")) {
   charSet += symbols;
   console.log(charSet);
-}
+}};
+
+generateSymbols();
 
 
 
 let finalPassword = "";
+
 
 //When prompts are answered, generate a password that matches the criteria
 for(let i = 0; i < lengthAnswer; i++) {
