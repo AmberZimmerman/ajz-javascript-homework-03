@@ -26,8 +26,8 @@ let charSet = "";
 
 // const lengthAnswer = range(8,124);
 
-// let lengthAnswer = Number(prompt("How many characters long would you like your password to be? Type a number between 8 and 124", "8"));
-// console.log(lengthAnswer);
+let lengthAnswer = Number(prompt("How many characters long would you like your password to be? Type a number between 8 and 124", "8"));
+console.log(lengthAnswer);
 
 function test() {
   let lengthAnswer = Number(prompt("How many characters long would you like your password to be? Type a number between 8 and 124", "8")); {
