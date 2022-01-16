@@ -21,10 +21,7 @@ let charSet = "";
 
 //Prompt to choose the length of the password that is at least 8 characters and no more than 124 characters
 
-
-// let lengthAnswer = Number(prompt("How many characters long would you like your password to be? Type a number between 8 and 124", "8"));
-
-// const lengthAnswer = range(8,124);
+const lengthAnswer = range(8,124);
 
 let lengthAnswer = Number(prompt("How many characters long would you like your password to be? Type a number between 8 and 124", "8"));
 console.log(lengthAnswer);
